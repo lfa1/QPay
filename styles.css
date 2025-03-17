@@ -1,0 +1,154 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* Заголовок сайта */
+header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Разделы */
+.section {
+    padding: 60px 0;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    font-size: 2.2em;
+    color: #1e3c72;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* Карточки услуг */
+.service-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service {
+    flex: 1;
+    min-width: 300px;
+    background: linear-gradient(135deg, #ffffff, #eef1f5);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.service h3 {
+    font-size: 1.6em;
+    color: #1e3c72;
+}
+
+.service p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Ссылки */
+a {
+    color: #ffcc00;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ff9900;
+}
+
+/* Отзывы */
+.testimonial {
+    background: linear-gradient(135deg, #ffffff, #f0f2f5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.testimonial blockquote {
+    font-style: italic;
+    color: #666;
+    border-left: 4px solid #ffcc00;
+    padding-left: 15px;
+}
+
+/* FAQ */
+.faq-item h3 {
+    font-size: 1.4em;
+    color: #1e3c72;
+    font-weight: 600;
+}
+
+.faq-item p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Подвал */
+footer {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 1.1em;
+    margin-top: 30px;
+}
